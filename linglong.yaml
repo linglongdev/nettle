@@ -1,0 +1,21 @@
+package:
+  id: nettle
+  name: nettle
+  version: 3.4.1.2
+  kind: lib
+  description: |
+    nettle.
+
+base:
+  id: org.deepin.base
+  version: 20.5.0
+
+source:
+  kind: git
+  url: https://github.com/deepin-community/nettle.git
+  version: uos
+  commit: 5322de16ac5e46f3246de43e8468685f2f04dcac
+  patch:
+  - fPIC.patch
+build:
+  kind: autotools
